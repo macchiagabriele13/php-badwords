@@ -16,12 +16,17 @@
 <h2>Inserisci le tue parole nel Form</h2>
 
 <div class='container'>
-<form action="filterWord.php" method="get"></form>
-    <div class="form-group">
-      <label for="words">Parole o Parolacce?</label>
-      <input type="text" name="words" id="words" class="form-control" placeholder="Inserisci il tuo testo" aria-describedby="helpId">
-      <small id="helpId" class="text-muted">Scrivi quello che vuoi se hai il coraggio!</small>
-    </div>
+    <form action="filterWord.php" method="get">
+        <div class="form-group">
+        <label for="newParagraph">Inserisci il paragrafo da filtrare</label><br>
+        <textarea name="newParagraph" id="newParagraph" cols="30" rows="10"></textarea>
+        <br>
+        <input type="text" name="badWord" id="badWord" class="form-control" placeholder="Inserisci la parolaccia" aria-describedby="helpId">
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+        </div>
+
+    </form>
 </div>
 </body>
 </html>
